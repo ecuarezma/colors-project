@@ -116,7 +116,10 @@ export default {
       width: "100%",
       textAlign: "center",
       marginBottom: "0",
-      padding: "1rem"
+      padding: "1rem",
+      [sizes.down("xs")]: {
+        fontSize: "5rem"
+      }
     },
     "& p": {
       fontWeight: "300",
