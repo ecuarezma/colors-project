@@ -18,7 +18,7 @@ export default {
     },
     [sizes.down("md")]: {
       width: "50%",
-      height: props => (props.showingFullPalette ? "10%" : "50%")
+      height: props => (props.showingFullPalette ? "10%" : "20%")
     },
     [sizes.down("xs")]: {
       width: "100%",
