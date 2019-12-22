@@ -11,6 +11,7 @@ import classNames from "classnames";
 import PaletteFormNav from "./PaletteFormNav";
 import ColorPicker from "./ColorPicker";
 import styles from "./styles/NewPaletteFormStyles";
+import seedColors from "./seedColors";
 const arrayMove = require("array-move");
 
 class NewPaletteForm extends Component {
@@ -22,7 +23,7 @@ class NewPaletteForm extends Component {
     this.state = {
       open: true,
       newPaletteName: "",
-      colors: this.props.palettes[0].colors
+      colors: seedColors[0].colors
     };
 
     this.addNewColor = this.addNewColor.bind(this);

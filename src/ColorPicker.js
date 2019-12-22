@@ -52,7 +52,11 @@ export class ColorPicker extends Component {
           color={curColor}
           onChangeComplete={this.updateCurColor}
         />
-        <ValidatorForm onSubmit={this.handleSubmit}>
+        <ValidatorForm
+          onSubmit={this.handleSubmit}
+          ref="form"
+          instantValidate={false}
+        >
           <TextValidator
             className={classes.colorNameInput}
             name="newColorName"
