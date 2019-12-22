@@ -28,7 +28,6 @@ class MiniPalette extends PureComponent {
         key={color.name}
       />
     ));
-    console.log("RENDERING", paletteName);
 
     return (
       <div onClick={this.handleClick} className={classes.root}>

@@ -25,7 +25,7 @@ class Navbar extends Component {
     this.setState({ open: false });
   }
   render() {
-    const { format } = this.state;
+    const { format, open } = this.state;
     const { level, changeLevel, showingAllColors, classes } = this.props;
     return (
       <nav className={classes.Navbar}>
@@ -55,7 +55,7 @@ class Navbar extends Component {
         </div>
         <Snackbar
           anchorOrigin={{ vertical: "bottom", horizontal: "left" }}
-          open={this.state.open}
+          open={open}
           autoHideDuration={3000}
           message={
             <span id="message-id">{`Format Changed to ${format.toUpperCase()}`}</span>

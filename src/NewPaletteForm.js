@@ -1,8 +1,4 @@
 import React, { Component } from "react";
-import PaletteFormNav from "./PaletteFormNav";
-import ColorPicker from "./ColorPicker";
-import classNames from "classnames";
-import { withStyles } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
 import Typography from "@material-ui/core/Typography";
 import Divider from "@material-ui/core/Divider";
@@ -10,6 +6,10 @@ import Button from "@material-ui/core/Button";
 import IconButton from "@material-ui/core/IconButton";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import DraggableColorList from "./DraggableColorList";
+import { withStyles } from "@material-ui/core/styles";
+import classNames from "classnames";
+import PaletteFormNav from "./PaletteFormNav";
+import ColorPicker from "./ColorPicker";
 import styles from "./styles/NewPaletteFormStyles";
 const arrayMove = require("array-move");
 
